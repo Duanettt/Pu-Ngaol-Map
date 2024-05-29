@@ -15,8 +15,8 @@ _______________
 To do:
 - BUKUNMI(Homepage)
 - DUAINE (Online Version of the Map)
-- OLAMIDE()
-- JOE()
-- TOBY()
+- OLAMIDE(Presentation)
+- JOE(CSS Checking: Mobile Version)
+- TOBY(Donation page.)
 - HARRY()
 ________________
