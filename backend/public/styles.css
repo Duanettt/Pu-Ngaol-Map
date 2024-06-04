@@ -1,16 +1,50 @@
-@import "tailwindcss/base";
-
-@import "tailwindcss/components";
-
-@import "tailwindcss/utilities";
-
-#map
+* 
 {
-    height: 1920px;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#waterfalls
+body 
 {
-    font-size: 50px;
+    overflow-x: hidden;
+}
+
+#things-to-do 
+{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+
+#things-to-do img 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#things-to-do h1 
+{
+    position: absolute;
+    top: 35vh;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 6em;
+    z-index: 1;
+}
+
+#map-navigation
+{
+    background-color: rgb(5, 48, 5);
+    height: 6vh;
+}
+
+#map 
+{
+    height: 100vh;
+    width: 100%;
 }

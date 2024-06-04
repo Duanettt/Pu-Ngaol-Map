@@ -7,6 +7,8 @@ var map = new mapboxgl.Map({
     zoom: 10
 });
 
+let markers = [];
+
 // GeoJSON data for the wildlife sanctuaries
 const sanctuaries = {
     "type": "FeatureCollection",
@@ -78,6 +80,9 @@ const sanctuaries = {
         },
     ]
 };
+
+
+
 
 // Add sanctuaries to the map
 map.on('load', function() {
