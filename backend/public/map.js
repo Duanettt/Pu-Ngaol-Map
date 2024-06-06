@@ -9,6 +9,26 @@ var map = new mapboxgl.Map({
 
 let markers = [];
 
+// const attractions = 
+// {
+//     "waterfalls": 
+//     [
+//         {
+//             "name": "Kulén Waterfalls",
+//             "coordinates": [104.1324, 13.5589]
+//         },
+//         {
+//             "name": "Bou Sra Waterfall",
+//             "coordinates": [107.3017, 13.5453]
+//         },
+//         {
+//             "name": "Sen Monorom Waterfall",
+//             "coordinates": [107.2124, 12.4568]
+//         }
+//     ],
+
+// }
+
 // GeoJSON data for the wildlife sanctuaries
 const sanctuaries = {
     "type": "FeatureCollection",
@@ -191,24 +211,26 @@ async function getDirections(start, end) {
 }
 
 // Identify our coordinates.
-/* function createDraggableMarker(sanctuary) {
-    const marker = new mapboxgl.Marker({
-        draggable: true
-    })
-    .setLngLat(sanctuary.coordinates)
-    .setPopup(new mapboxgl.Popup().setHTML(`<h3>${sanctuary.name}</h3><p>${sanctuary.description}</p>`))
-    .addTo(map);
+// function createDraggableMarker(sanctuary) {
+//     const marker = new mapboxgl.Marker({
+//         draggable: true
+//     })
+//     .setLngLat(sanctuary.coordinates)
+//     .setPopup(new mapboxgl.Popup().setHTML(`<h3>${sanctuary.name}</h3><p>${sanctuary.description}</p>`))
+//     .addTo(map);
 
-    marker.on('dragend', function() {
-        const lngLat = marker.getLngLat();
-        sanctuary.coordinates = [lngLat.lng, lngLat.lat];
-        console.log(`New coordinates for ${sanctuary.name}: ${sanctuary.coordinates}`);
-        // Here you can save the new coordinates to a backend or local storage
-    });
-}
-// Add markers for each sanctuary
-sanctuaries.forEach(sanctuary => {
-    createDraggableMarker(sanctuary);
-}); */
+//     marker.on('dragend', function() {
+//         const lngLat = marker.getLngLat();
+//         sanctuary.coordinates = [lngLat.lng, lngLat.lat];
+//         console.log(`New coordinates for ${sanctuary.name}: ${sanctuary.coordinates}`);
+//         // Here you can save the new coordinates to a backend or local storage
+//     });
+// }
+// // Add markers for each sanctuary
+// for (const category in attractions) {
+//     attractions[category].forEach(sanctuary => {
+//         createDraggableMarker(sanctuary);
+//     });
+// }
+// // Function to get directions from user's location to the sanctuary
 
-// Function to get directions from user's location to the sanctuary

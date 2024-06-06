@@ -1,50 +1,95 @@
-* 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body 
-{
+body {
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
 }
 
-#things-to-do 
-{
-    position: relative;
-    width: 100vw;
-    height: 70vh;
-}
-
-#things-to-do img 
-{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#things-to-do h1 
-{
-    position: absolute;
-    top: 35vh;
-    left: 40%;
-    transform: translate(-50%, -50%);
+header {
+    background-color: #055;
     color: white;
+    padding: 1rem;
     text-align: center;
-    font-size: 6em;
-    z-index: 1;
 }
 
-#map-navigation
-{
-    background-color: rgb(5, 48, 5);
-    height: 6vh;
-}
-
-#map 
-{
-    height: 100vh;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+}
+
+#things-to-do {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+#things-to-do img {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+#things-to-do h1 {
+    position: absolute;
+    color: white;
+    font-size: 8em;
+    text-align: center;
+    text-shadow: 3px 3px 25px black;
+}
+
+#map-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #055;
+    padding: 1rem;
+    width: 100%;
+}
+
+#map-navigation button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#map-navigation button:hover {
+    background-color: #038c5a;
+    transition: all 0.6s ease;
+    transform: scale(1.1);
+}
+
+#map {
+    width: 100%;
+    height: 70vh;
+    /* margin-top: 1rem; */
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    #things-to-do h1 {
+        font-size: 3em;
+    }
+
+    #map-navigation button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }

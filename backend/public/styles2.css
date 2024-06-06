@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    height: 50vh; /* Adjust the height as needed */
+    background: url('cambodia-waterfall.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-top: 10vh;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    margin-right: 10vw;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+.main {
+    flex: 2;
+    padding: 20px; /* Added padding for spacing */
+    text-align: center;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    flex: 1;
+    justify-content: center;
+    padding: 10px; /* Added padding for spacing */
+}
+
+.sidebar img {
+    width: 100%; /* Make image responsive */
+    max-width: 20vw; /* Limit max width */
+    border-radius: 20px;
+    border: 0px black solid;
+    box-shadow: 0px 0px 5px black;
+}
+
+.sidebar img:hover {
+    transition: all ease 0.6s;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items */
+    }
+
+    .sidebar, .main {
+        margin-left: 0; /* Reset margin */
+        padding: 10px; /* Adjust padding */
+        width: 100%; /* Ensure full width */
+    }
+
+    .sidebar img {
+        max-width: 100%; /* Make image take full width */
+    }
+
+    header {
+        margin-top: 0vh; /* Adjust header margin */
+        height: 15vh; /* Adjust height for smaller screens */
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin-top: 5vh;
+    }
+}

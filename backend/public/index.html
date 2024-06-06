@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <script src="map.js" defer></script>
+    <script src="buttons.js" defer></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <link href="styles.css" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
@@ -12,11 +13,18 @@
 </head> 
 <body>
   <div id="navigation"></div>
+  <!-- change id when finished. -->
   <div id="things-to-do">
     <img src="cambodia-waterfall.jpg" alt="Cambodia Waterfall">
-    <h1>Things to do</h1>
+    <h1>Explore</h1>
   </div>
-  <div id="map-navigation"></div>
+  <div id="instructions"></div>
+  <div id="map-navigation">
+    <button id='waterfalls'>Waterfalls</button>
+    <button id='resorts'>Resorts</button>
+    <button id='cities'>Cities</button>
+    <button id='villages'>Villages</button>
+  </div>
   <div id='map'></div>
 </body>
 </html>
