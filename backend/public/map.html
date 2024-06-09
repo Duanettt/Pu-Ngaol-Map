@@ -6,24 +6,29 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <script src="map.js" defer></script>
     <script src="buttons.js" defer></script>
+    <script src="navigation.js" defer></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/308603c1e9.js" crossorigin="anonymous"></script>
+
     <link href="styles.css" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
     <title>Visit Ngaol</title>
 </head> 
 <body>
-  <div id="navigation"></div>
-  <!-- change id when finished. -->
-  <div id="things-to-do">
-    <img src="cambodia-waterfall.jpg" alt="Cambodia Waterfall">
-    <h1>Explore</h1>
+  <a id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </a>
+  <div id="navigation">
+    <i class="fa-solid fa-house"></i>
   </div>
-  <div id="instructions"></div>
   <div id="map-navigation">
-    <button id='waterfalls'>Waterfalls</button>
-    <button id='resorts'>Resorts</button>
-    <button id='cities'>Cities</button>
-    <button id='villages'>Villages</button>
+    <i class="fa-solid fa-xmark"></i>
+    <a id='waterfalls'>Waterfalls</a>
+    <a id='resorts'>Resorts</a>
+    <a id='cities'>Cities</a>
+    <a id='villages'>Villages</a>
+    <a id='views'>Views</a>
+    <a id='sanctuaries'>Sanctuaries</a>
   </div>
   <div id='map'></div>
 </body>

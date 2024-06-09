@@ -10,14 +10,16 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 header {
     position: relative;
     text-align: center;
-    height: 50vh; /* Adjust the height as needed */
-    background: url('cambodia-waterfall.jpg') no-repeat center center/cover;
+    height: 37vh; /* Adjust the height as needed */
+    background: url('bou-sra-waterfall.jpg') no-repeat center center/cover;
+    background-size: 100vw 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,23 +28,65 @@ header {
 }
 
 header h1 {
-    font-size: 4rem;
-    margin-top: 10vh;
+    font-size: 6rem;
+    margin-top: 2vh;
+    text-shadow: 3px 3px 25px black;
 }
+
+.search {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px; /* Add padding to the left to make space for the icon */
+    border: 1px solid #ccc; /* Add a border */
+    width: 250px; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+#search-icon {
+    position: absolute;
+    left: calc(50% - 130px + 10px); /* Center the icon within the search input */
+    font-size: 20px;
+    color: gray;
+    pointer-events: none; /* Make sure the icon doesn't block input interaction */
+}
+
+
 
 .content {
     position: relative;
     display: flex;
     flex: 1;
     text-align: center;
-    margin-right: 10vw;
+    margin-top: 5vh;
+    gap: 3em;
     flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+.content h2
+{
+    font-size: 1.3em;
+}
+
+.content p
+{
+    
 }
 
 .main {
     flex: 2;
-    padding: 20px; /* Added padding for spacing */
+    padding: 10px; /* Added padding for spacing */
     text-align: center;
+    width: 50%;
+    border: 2px solid black;
+    max-width: 20vw; /* Set a max-width for the main section */ /* Center the main section */
 }
 
 .sidebar {

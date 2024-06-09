@@ -5,12 +5,13 @@ const port = 3000;
 
 // app used to access express package 
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 // send's files so we can run our server.
-app.get('/', (req,res) => 
+app.get('/explore', (req,res) => 
 {
-    res.sendFile('index.html', (err) => 
+    const filePath = path.join(__dirname, 'public', 'explore.html');
+    res.sendFile(filePath, (err) => 
     {
         if (err)
             {
@@ -19,8 +20,18 @@ app.get('/', (req,res) =>
     })
 })
 
+app.get('/map', (req,res) => {
+    const filePath = path.join(__dirname, 'public', 'map.html');
+    res.sendFile(filePath, (err) => {
+        if (err)
+            {
+                console.log(err);
+            }
+    })
+})
 
-app.get('/hello/:mapdownloadable', (req, res) => 
+
+app.get('/explore/:mapdownloadable', (req, res) => 
 {
     const routeParameters = req.params;
     const name = routeParameters.mapdownloadable;

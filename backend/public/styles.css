@@ -18,69 +18,133 @@ header {
     text-align: center;
 }
 
-main {
+#map-navigation
+{
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-#things-to-do {
-    position: relative;
-    width: 100%;
-    height: 55vh;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
-}
-
-#things-to-do img {
-    width: 100%;
-    height: 55vh;
-    object-fit: cover;
-    filter: brightness(0.7);
-}
-
-#things-to-do h1 {
-    position: absolute;
-    color: white;
-    font-size: 8em;
-    text-align: center;
-    text-shadow: 3px 3px 25px black;
-}
-
-#map-navigation {
-    display: flex;
-    justify-content: center;
+    height: 100%;
+    padding: 2em;
+    width: 25%;
     gap: 1rem;
-    background-color: #055;
-    padding: 1rem;
-    width: 100%;
+    background-color: rgb(27, 61, 39);
+    transition: left 0.3s ease;
+    left: -25%;
+    z-index: 50; 
 }
 
-#map-navigation button {
-    background-color: #04AA6D;
+#map-navigation.open {
+    left: 0; /* Slide the sidebar into view */
+}
+
+.fa-solid.fa-bars
+{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(27, 61, 39);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.fa-solid.fa-bars:hover {
+    background-color: #038c5a;
+    box-shadow: 1px 1px 5px #000000;
+    transition: all 0.6s ease;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+.fa-solid.fa-house {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 1.5em;
+    background-color: rgb(27, 61, 39);
+    color: white;
+    z-index: 100;
+}
+
+.fa-solid.fa-house:hover {
+    background-color: #038c5a;
+    box-shadow: 1px 1px 5px #000000;
+    transition: all 0.6s ease;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+/* Initially, hide the X mark */
+.fa-solid.fa-xmark {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(27, 61, 39);
+    z-index: 100;
+}
+
+.fa-solid.fa-xmark:hover {
+    box-shadow: 1px 1px 3px #000000;
+    background-color: #038c5a;
+    transition: all 0.6s ease;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+/* Show the X mark when the close class is applied to the hamburger */
+#hamburger.close .fa-bars {
+    display: none;
+}
+
+#hamburger.close .fa-xmark {
+    display: block;
+}
+
+
+#map-navigation a {
     border: none;
     color: white;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 15px;
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 100%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-#map-navigation button:hover {
+#map-navigation a:hover {
+    box-shadow: 1px 1px 20px #000000;
     background-color: #038c5a;
     transition: all 0.6s ease;
     transform: scale(1.1);
+    width: 100%;
 }
 
 #map {
     width: 100%;
-    height: 70vh;
-    /* margin-top: 1rem; */
-    background-color: #e0e0e0;
+    height: 100vh;
+}
+
+.mapboxgl-popup-content {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
 }
 
 @media (max-width: 768px) {
