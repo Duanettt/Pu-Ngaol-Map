@@ -14,7 +14,8 @@ body {
     align-items: center; /* Center items horizontally */
 }
 
-header {
+header 
+{
     position: relative;
     text-align: center;
     height: 37vh; /* Adjust the height as needed */
@@ -65,9 +66,15 @@ header h1 {
     display: flex;
     flex: 1;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
     gap: 3em;
     flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    color: white;
+    background-color: rgb(79, 146, 79);
+    padding: 20px;
+    padding-right: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px black;
 }
 
 .content h2
@@ -80,20 +87,26 @@ header h1 {
     
 }
 
-.main {
+.main 
+{
     flex: 2;
     padding: 10px; /* Added padding for spacing */
     text-align: center;
     width: 50%;
-    border: 2px solid black;
-    max-width: 20vw; /* Set a max-width for the main section */ /* Center the main section */
+    max-width: 35vw; /* Set a max-width for the main section */ /* Center the main section */
 }
 
-.sidebar {
+.sidebar 
+{
     box-sizing: border-box;
     flex: 1;
     justify-content: center;
     padding: 10px; /* Added padding for spacing */
+}
+
+.sidebar h2 
+{
+    margin-bottom: 5px;
 }
 
 .sidebar img {
@@ -110,6 +123,26 @@ header h1 {
     cursor: pointer;
 }
 
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+/* the greater than selects direct children not anything past it. */
+#cards > div {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    max-width: 300px;
+}
+
+#cards img {
+    width: 100px;
+    height: auto;
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -123,10 +156,14 @@ footer {
         flex-direction: column; /* Stack content vertically */
         align-items: center; /* Center items */
     }
+    .main
+    {
+        font-size: 20px;
+    }
 
     .sidebar, .main {
         margin-left: 0; /* Reset margin */
-        padding: 10px; /* Adjust padding */
+        padding: 5vw; /* Adjust padding */
         width: 100%; /* Ensure full width */
     }
 
