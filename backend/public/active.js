@@ -1,8 +1,10 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', (event) => 
+{
     const image = document.getElementById('images');
     image.addEventListener('click', imageClickable);
+    
 });
 
 function imageClickable() {
-    window.location.href = 'newpage.html'; // Replace 'newpage.html' with the URL you want to navigate to
+    window.location.href = 'map.html'; // Replace 'newpage.html' with the URL you want to navigate to
 }
