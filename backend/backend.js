@@ -31,6 +31,17 @@ app.get('/map', (req,res) => {
 })
 
 
+app.get('/history', (req,res) => {
+    const filePath = path.join(__dirname, 'public', 'History.html');
+    res.sendFile(filePath, (err) => {
+        if (err)
+            {
+                console.log(err);
+            }
+    })
+})
+
+
 app.get('/explore/:mapdownloadable', (req, res) => 
 {
     const routeParameters = req.params;

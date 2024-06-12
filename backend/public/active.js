@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', (event) =>
 });
 
 function imageClickable() {
-    window.location.href = 'map.html'; // Replace 'newpage.html' with the URL you want to navigate to
+    window.location.href = '/map'; // Replace 'newpage.html' with the URL you want to navigate to
 }
