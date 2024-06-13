@@ -69,3 +69,29 @@ body {
     color: #e8491d;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    body {
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    #showcase h1 {
+        font-size: 40px;
+    }
+
+    #showcase p {
+        font-size: 24px;
+    }
+
+    .section img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-image {
+        width: 20%;
+    }
+}

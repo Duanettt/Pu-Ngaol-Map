@@ -3,46 +3,49 @@
 .firstSection {
     display: flex;
     align-items: center;
-    height: 110vh;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 #sectionPic {
-    width: 35%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: inline-block;
+    margin-top: 20px;
 }
 
 #secDiv {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .sectionDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 600px;
-    top: auto;
+    max-width: 100%;
+    text-align: left;
 }
 
-.sectionDiv>h2 {
-    margin-bottom: 30px;
-    justify-self: flex-start;
-    margin-left: 40px;
+
+.sectionDiv > h2 {
+    margin-bottom: 20px;
     font-weight: 900;
-    font-size: 200%;
+    font-size: 2.5em;
     color: #0e2f06;
+    line-height: 1.2;
 }
 
-.sectionDiv>p {
-    max-width: 90%;
-    margin-left: 40px;
+.sectionDiv > p {
+    font-size: 1.1em;
     font-weight: 500;
     color: #0e2f06;
+    line-height: 1.6;
 }
+
+
 
 /* Second Section Styling*/
 
@@ -222,4 +225,77 @@ color: #0e2f06;
 
 #buttonSection {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* First Section */
+    .firstSection {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sectionPic {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+
+    /* Second Section */
+    .secondSection {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #secondSectionDiv h2 {
+        padding: 0px;
+    }
+
+    #sDiv {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #sDiv i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #sDiv a {
+        width: 100%;
+    }
+
+    /* Third Section */
+    .thirdSection {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .thirdSection h2 {
+        padding: 0px;
+    }
+
+    /* Slideshow */
+    .slideshow {
+        max-width: 100%;
+    }
+
+     #secDiv {
+            padding: 0 10px; /* Adjust padding for smaller screens */
+        }
+
+
+
+          .sectionDiv > h2 {
+                 font-size: 2em;
+                 line-height: 1.4;
+             }
+
+             .sectionDiv > p {
+                 font-size: 1em;
+                 line-height: 1.6;
+             }
 }

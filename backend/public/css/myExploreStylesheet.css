@@ -169,3 +169,56 @@
     
 }
 
+@media (max-width: 768px) {
+    .firstSection {
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .firstSection p {
+        padding: 0;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .secondSection {
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .secondSection p {
+        margin-bottom: 20px;
+    }
+
+    .slideDiv {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .buttons a {
+        font-size: 30px;
+        margin-right: 10px;
+        padding: 12px;
+    }
+
+    .thirdSection h2 {
+        padding: 0px 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    #mapImg {
+        max-width: 100%;
+    }
+
+    #downloadButton {
+        margin-top: 20px;
+    }
+}
