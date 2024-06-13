@@ -7,6 +7,16 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname + '/public')));
 
+app.get('/', (req,res) => {
+    const filePath = path.join(__dirname, 'public', 'index.html');
+    res.sendFile(filePath, (err) => {
+        if (err)
+            {
+                console.log(err);
+            }
+    })
+})
+
 // send's files so we can run our server.
 app.get('/explore', (req,res) => 
 {
@@ -42,13 +52,13 @@ app.get('/history', (req,res) => {
 })
 
 
-app.get('/explore/:mapdownloadable', (req, res) => 
+app.get('/:mapdownloadable', (req, res) => 
 {
     const routeParameters = req.params;
     const name = routeParameters.mapdownloadable;
     
     // This is for initializing our files and how we access the pdf to be downloaded
-    const filePath = path.join(__dirname, 'public', 'pungaol map.pdf');
+    const filePath = path.join(__dirname, 'public', 'images/Pu Ngaol Map.png');
     
     // This triggers the download once we click on this url.
     res.download(filePath, (err) => 

@@ -4,29 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History and Culture - Pu Ngaol</title>
-    <link rel="stylesheet" href="hStyles.css">
+    <script src="js/navigation.js" defer></script>
+    <link rel="stylesheet" href="css/masterStylesheet.css" />
+    <script src="https://kit.fontawesome.com/08edeb1f62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/hStyles.css" />
 </head>
 <body>
+    <div id="testing">
+        <a><i class="fa-solid fa-plane"></i>Visit Pu Ngaol</a>
+        <a href="https://www.wateraid.org/uk/where-we-work/cambodia">Donate <i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+    </div>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Pu Ngaol</h1>
+        <a href="index.html"><img src="images/logo.jpeg" class="logo"></img></a>
+            <ul>
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="explore.html">Explore</a></li>
+                <li class="nav"><a href="history.html">History</a></li>
+                <li class="nav target"><a>Plan your vacation<i id="navIcon" class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+            <div class="dropdown">
+                <div id="div1_2_1">
+                    <p>Ahead of a trip to Pu Ngaol, here's the key things to consider - from details on visas and immigration to travel and budgeting tips.</p>
+                </div>
+                <div id="div1_2_2">
+                    <h2>Things to Consider</h2>
+                    <ul>
+                        <li><a href="https://www.gov.uk/foreign-travel-advice/cambodia/entry-requirements">Travelling Requirements</a></li>
+                        <li><a href="https://www.booking.com/searchresults.en-gb.html?aid=303948&label=kh-KGBDQOlrBmBNnqzzcHqFQgS553328498386%3Apl%3Ata%3Ap12120%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-101860323%3Alp9045087%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&lang=en-gb&sid=8574d82085659a1c2055bb73f5ca30e7&sb=1&sb_lp=1&src=country&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fcountry%2Fkh.en-gb.html%3Faid%3D303948%26label%3Dkh-KGBDQOlrBmBNnqzzcHqFQgS553328498386%253Apl%253Ata%253Ap12120%253Ap2%253Aac%253Aap%253Aneg%253Afi%253Atikwd-101860323%253Alp9045087%253Ali%253Adec%253Adm%253Appccp%253DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA%26sid%3D8574d82085659a1c2055bb73f5ca30e7%26&ss=Pu+Ngaol+Community+Meeting+Hall%2C+Krong+Saen+Monourom%2C+Cambodia&is_ski_area=&ssne=Cambodia&ssne_untouched=Cambodia&checkin_year=&checkin_month=&checkout_year=&checkout_month=&flex_window=0&efdco=1&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&ac_position=0&ac_click_type=g&dest_type=landmark&place_id=ChIJsSXK3o7rcjER_z7dh20VpXA&place_id_lat=12.5776539&place_id_lon=106.9349172&search_pageview_id=17c628ea64830090&search_selected=true&ss_raw=pu+ngaol">Accomodation options</a></li>
+                        <li><a href="https://www.skyscanner.net/transport/flights/UK/PNHK?iym=2410&oym=2409&preferdirects=false&rtn=1&selectediday=04&selectedoday=26">Flight Options</a></li>
+                        <li><a href="https://camboticket.com">Transport Options</a></li>
+                        <h2 id="leavingSpace">Pu Ngaol Tours</h2>
+                        <p>Pre-order Pu Ngaol attractions, tours and travel tickets before you arrive in Pu Ngaol.</p>
+                        <li><a href="https://uk.trip.com/things-to-do/detail/63469040/">View Tours</a></li>
+                    </ul>
+                    </div>
+                <div id="div1_2_3">
+                    <h2>Visa & Entry</h2>
+                    <ul>
+                        <li><a href="https://www.cambodiaembassyuk.org/visa-cosular-services/apply-e-visa/">Visa & Immigration</a></li>
+                        
+                    </ul>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="activity.html">Activity</a></li>
-                    <li><a href="map.html">Map</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="wildlife.html">Wildlife</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
-
+    <section class="banner">
+        <video class="bannerVideo" src="homepageBanner.mp4" autoplay muted loop></video>
+        <div class="bannerContent">
+            <h1>Take A Leap.</h1>
+        </div>
+        <div class="mediaIcons">
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </section>
     <section id="showcase">
-        <img src="Flag_of_Cambodia.svg.png" alt="Flag of Cambodia" class="top-image">
+        <img src="images/Flag_of_Cambodia.svg.png" alt="Flag of Cambodia" class="top-image">
         <div class="container">
             <h1>History and Culture of Pu Ngaol</h1>
             <h2>Learn about the rich history and cultural heritage of Pu Ngaol.</h2>
@@ -37,9 +71,34 @@
         <div id="content"></div>
     </div>
     
-    <footer>
-        <p>&copy; 2024 History and Culture of Pu Ngaol. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footerDiv">
+            <div>
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>External Websites</h2>
+                <ul>
+                    <li><a href="https://www.gov.uk">Gov</a></li>
+                    <li><a href="https://www.booking.com">Booking</a></li>
+                    <li><a href="https://www.skyscanner.net">SkyScanner</a></li>
+                    <li><a href="https://uk.trip.com">Trip</a></li>
+                    <li><a href="https://www.cambodiaembassyuk.org">Cambodia Embassy</a></li>
+                    <li><a href="https://camboticket.com">Camboticket</a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <a href="mailto:Pu_Ngaol_Tourists@gmail.com">Pu_Ngaol_Tourists@gmail.com</a>
+                <p>© Copyright 2024. www.pungaoltourists.com</p>
+            </div>
+        </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

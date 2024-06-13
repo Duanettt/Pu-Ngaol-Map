@@ -1,0 +1,171 @@
+.firstSection {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    color: #0e2f06;
+}
+
+.firstSection p {
+    padding: 0px 200px;
+    width: 70%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.secondSection {
+    padding: 0px 200px;
+    color: #0e2f06;
+    background-color: #e3ffd7;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.secondSection p {
+    margin-bottom: 50px;
+}
+
+.mySlide a {
+    text-decoration: none;
+    color: #0e2f06;
+    transition: 0.3s ease;
+}
+
+.mySlide a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #0e2f06;
+    transition: 0.6s ease;
+}
+
+.slideshow {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.mySlide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    scroll-snap-align: start;
+    object-fit: cover;
+    flex: 1 0 100%
+}
+
+.slideDiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 190px;
+    margin-bottom: 50px;
+}
+
+.slideDiv p {
+    margin-top: 10px;
+    color: #0e2f06;
+}
+
+.slideDiv h2 {
+    color: #0e2f06;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+
+.slideImg {
+    width: 150%;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons a {
+    font-size: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: white;
+    border: #0e2f063a solid 0.1px;
+    transition: 0.3s ease;
+}
+
+.buttons a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+
+.thirdSection {
+    height: 70vh;
+}
+
+#thirdDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thirdDiv h2 {
+    align-self: flex-start;
+    margin-bottom: 40px;
+}
+
+.thirdSection h2 {
+    
+    padding: 0px 200px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 200%;
+    margin-top: 30px;
+}
+
+#mapImg {
+    position: relative;
+    width: 100%; /* Make image responsive */
+    max-width: 20vw; /* Limit max width */
+    border-radius: 20px;
+    border: 0px black solid;
+    box-shadow: 0px 0px 5px black;
+}
+
+#mapImg:hover {
+    transition: all ease 0.6s;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.thirdSection>div>div {
+    display: flex;
+}
+
+#downloadButton {
+    background-color: green; /* Initial background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    margin-top: 25px;
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Make it behave like a button */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#downloadButton:hover {
+    background-color: darkgreen; /* Background color on hover */
+    transition: 0.6s ease;
+    transform: scale(1.1);
+    
+}
+
